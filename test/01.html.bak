@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 请用 Css 写一个简单的幻灯片效果页面 */
+        
+        .box {
+            height: 380px;
+            width: 480px;
+            margin: 100px auto;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+        
+        p {
+            text-align: center;
+            color: blue;
+        }
+        
+        .ani {
+            width: 480px;
+            height: 320px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            background-size: cover;
+            backface-visibility: hidden;
+            background-position: center;
+            overflow: hidden;
+            animation: play 10s linear infinite;
+        }
+        
+        img {
+            display: none;
+        }
+        
+        @keyframes play {
+            0% {
+                background: url("./images/ani1.jpg") no-repeat;
+            }
+            25% {
+                background: url("./images/ani2.jpg") no-repeat;
+            }
+            50% {
+                background: url("./images/ani3.jpg") no-repeat;
+            }
+            75% {
+                background: url("./images/ani4.jpg") no-repeat;
+            }
+            100% {
+                background: url("./images/ani5.jpg") no-repeat;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- <img src="./images/ani1.jpg" alt="">
+        <img src="./images/ani2.jpg" alt="">
+        <img src="./images/ani3.jpg" alt="">
+        <img src="./images/ani4.jpg" alt="">
+        <img src="./images/ani5.jpg" alt=""> -->
+        <div class="ani">
+
+        </div>
+        <p class="first">C3 PPT</p>
+    </div>
+
+
+</body>
+
+</html>
